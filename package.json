@@ -1,6 +1,6 @@
 {
     "name": "service-msgtemplates-node",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Conceptual Vision Consulting LLC",
     "description": "Message templates microservice in Node.js",
     "contributors": [
@@ -46,7 +46,7 @@
         "pip-services3-grpc-nodex": "^1.0.*",
         "pip-services3-mongodb-nodex": "^1.0.*",
         "pip-services3-rpc-nodex": "^1.2.*",
-        "pip-services3-swagger-nodex": "^1.0.0"
+        "pip-services3-swagger-nodex": "^1.0.*"
     },
     "devDependencies": {
         "@types/chai": "*",
