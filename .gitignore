@@ -1,0 +1,8 @@
+/node_modules
+/npm-debug.log
+/.idea
+/data/message_templates.test.json
+/data/message_templates.json
+/obj/test
+/docker/id_rsa*
+package-lock.json

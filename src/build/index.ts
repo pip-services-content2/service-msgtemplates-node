@@ -1,0 +1,1 @@
+export { MessageTemplatesServiceFactory } from './MessageTemplatesServiceFactory';
