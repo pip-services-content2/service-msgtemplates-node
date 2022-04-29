@@ -7,7 +7,7 @@ const MessageTemplatesServiceFactory_1 = require("../build/MessageTemplatesServi
 class MessageTemplatesLambdaFunction extends pip_services3_aws_nodex_1.CommandableLambdaFunction {
     constructor() {
         super("message_templates", "Message templates function");
-        this._dependencyResolver.put('controller', new pip_services3_commons_nodex_1.Descriptor('pip-services-msgtemplates', 'controller', 'default', '*', '*'));
+        this._dependencyResolver.put('controller', new pip_services3_commons_nodex_1.Descriptor('service-msgtemplates', 'controller', 'default', '*', '*'));
         this._factories.add(new MessageTemplatesServiceFactory_1.MessageTemplatesServiceFactory());
     }
 }

@@ -66,5 +66,5 @@ class MessageTemplatesController {
     }
 }
 exports.MessageTemplatesController = MessageTemplatesController;
-MessageTemplatesController._defaultConfig = pip_services3_commons_nodex_1.ConfigParams.fromTuples('dependencies.persistence', 'pip-services-msgtemplates:persistence:*:*:1.0');
+MessageTemplatesController._defaultConfig = pip_services3_commons_nodex_1.ConfigParams.fromTuples('dependencies.persistence', 'service-msgtemplates:persistence:*:*:1.0');
 //# sourceMappingURL=MessageTemplatesController.js.map

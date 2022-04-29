@@ -49,9 +49,9 @@ suite('MessageTemplatesHttpServiceV1', ()=> {
         service.configure(httpConfig);
 
         let references: References = References.fromTuples(
-            new Descriptor('pip-services-msgtemplates', 'persistence', 'memory', 'default', '1.0'), persistence,
-            new Descriptor('pip-services-msgtemplates', 'controller', 'default', 'default', '1.0'), controller,
-            new Descriptor('pip-services-msgtemplates', 'service', 'http', 'default', '1.0'), service
+            new Descriptor('service-msgtemplates', 'persistence', 'memory', 'default', '1.0'), persistence,
+            new Descriptor('service-msgtemplates', 'controller', 'default', 'default', '1.0'), controller,
+            new Descriptor('service-msgtemplates', 'service', 'http', 'default', '1.0'), service
         );
         controller.setReferences(references);
         service.setReferences(references);

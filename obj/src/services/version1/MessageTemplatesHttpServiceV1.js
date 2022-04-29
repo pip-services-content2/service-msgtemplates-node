@@ -6,7 +6,7 @@ const pip_services3_rpc_nodex_1 = require("pip-services3-rpc-nodex");
 class MessageTemplatesHttpServiceV1 extends pip_services3_rpc_nodex_1.CommandableHttpService {
     constructor() {
         super('v1/message_templates');
-        this._dependencyResolver.put('controller', new pip_services3_commons_nodex_1.Descriptor('pip-services-msgtemplates', 'controller', 'default', '*', '1.0'));
+        this._dependencyResolver.put('controller', new pip_services3_commons_nodex_1.Descriptor('service-msgtemplates', 'controller', 'default', '*', '1.0'));
     }
 }
 exports.MessageTemplatesHttpServiceV1 = MessageTemplatesHttpServiceV1;

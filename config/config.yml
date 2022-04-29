@@ -1,7 +1,7 @@
 ---
 # Container descriptor
 - descriptor: "pip-services:context-info:default:default:1.0"
-  name: "pip-services-msgtemplates"
+  name: "service-msgtemplates"
   description: "Message templates microservice for pip-services"
 
 # Console logger
@@ -14,18 +14,18 @@
 
 {{#if MEMORY_ENABLED}}
 # In-memory persistence. Use only for testing!
-- descriptor: "pip-services-msgtemplates:persistence:memory:default:1.0"
+- descriptor: "service-msgtemplates:persistence:memory:default:1.0"
 {{/if}}
 
 {{#if FILE_ENABLED}}
 # File persistence. Use it for testing of for simple standalone deployments
-- descriptor: "pip-services-msgtemplates:persistence:file:default:1.0"
+- descriptor: "service-msgtemplates:persistence:file:default:1.0"
   path: {{FILE_PATH}}{{#unless FILE_PATH}}"../data/msgtemplates.json"{{/unless}}
 {{/if}}
 
 {{#if MONGO_ENABLED}}
 # MongoDB Persistence
-- descriptor: "pip-services-msgtemplates:persistence:mongodb:default:1.0"
+- descriptor: "service-msgtemplates:persistence:mongodb:default:1.0"
   collection: {{MONGO_COLLECTION}}{{#unless MONGO_COLLECTION}}msgtemplates{{/unless}}
   connection:
     uri: {{{MONGO_SERVICE_URI}}}
@@ -39,11 +39,11 @@
 
 {{#unless MEMORY_ENABLED}}{{#unless FILE_ENABLED}}{{#unless MONGO_ENABLED}}
 # Default in-memory persistence
-- descriptor: "pip-services-msgtemplates:persistence:memory:default:1.0"
+- descriptor: "service-msgtemplates:persistence:memory:default:1.0"
 {{/unless}}{{/unless}}{{/unless}}
 
 # Default controller
-- descriptor: "pip-services-msgtemplates:controller:default:default:1.0"
+- descriptor: "service-msgtemplates:controller:default:default:1.0"
 
 {{#if HTTP_ENABLED}}
 # Common HTTP endpoint
@@ -54,7 +54,7 @@
     port: 8080
 
 # HTTP endpoint version 1.0
-- descriptor: "pip-services-msgtemplates:service:http:default:1.0"
+- descriptor: "service-msgtemplates:service:http:default:1.0"
   swagger:
     enable: true
     auto: true
@@ -78,8 +78,8 @@
     port: 8090
 
 # GRPC endpoint version 1.0
-- descriptor: "pip-services-msgtemplates:service:grpc:default:1.0"
+- descriptor: "service-msgtemplates:service:grpc:default:1.0"
 
 # Commandable GRPC endpoint version 1.0
-- descriptor: "pip-services-msgtemplates:service:commandable-grpc:default:1.0"
+- descriptor: "service-msgtemplates:service:commandable-grpc:default:1.0"
 {{/if}}

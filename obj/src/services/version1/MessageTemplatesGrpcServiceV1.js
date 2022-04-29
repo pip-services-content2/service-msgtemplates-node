@@ -19,7 +19,7 @@ const MessageTemplatesGrpcConverterV1_1 = require("./MessageTemplatesGrpcConvert
 class MessageTemplatesGrpcServiceV1 extends pip_services3_grpc_nodex_1.GrpcService {
     constructor() {
         super(services.MessageTemplatesService);
-        this._dependencyResolver.put('controller', new pip_services3_commons_nodex_1.Descriptor("pip-services-msgtemplates", "controller", "default", "*", "*"));
+        this._dependencyResolver.put('controller', new pip_services3_commons_nodex_1.Descriptor("service-msgtemplates", "controller", "default", "*", "*"));
     }
     setReferences(references) {
         super.setReferences(references);

@@ -10,14 +10,14 @@ import { MessageTemplatesCommandableGrpcServiceV1 } from '../services/version1/M
 import { MessageTemplatesGrpcServiceV1 } from '../services/version1/MessageTemplatesGrpcServiceV1';
 
 export class MessageTemplatesServiceFactory extends Factory {
-	public static Descriptor = new Descriptor("pip-services-msgtemplates", "factory", "default", "default", "1.0");
-	public static MemoryPersistenceDescriptor = new Descriptor("pip-services-msgtemplates", "persistence", "memory", "*", "1.0");
-	public static FilePersistenceDescriptor = new Descriptor("pip-services-msgtemplates", "persistence", "file", "*", "1.0");
-	public static MongoDbPersistenceDescriptor = new Descriptor("pip-services-msgtemplates", "persistence", "mongodb", "*", "1.0");
-	public static ControllerDescriptor = new Descriptor("pip-services-msgtemplates", "controller", "default", "*", "1.0");
-	public static HttpServiceDescriptor = new Descriptor("pip-services-msgtemplates", "service", "http", "*", "1.0");
-	public static CommandableGrpcServiceDescriptor = new Descriptor("pip-services-msgtemplates", "service", "commandable-grpc", "*", "1.0");
-	public static GrpcServiceDescriptor = new Descriptor("pip-services-msgtemplates", "service", "grpc", "*", "1.0");
+	public static Descriptor = new Descriptor("service-msgtemplates", "factory", "default", "default", "1.0");
+	public static MemoryPersistenceDescriptor = new Descriptor("service-msgtemplates", "persistence", "memory", "*", "1.0");
+	public static FilePersistenceDescriptor = new Descriptor("service-msgtemplates", "persistence", "file", "*", "1.0");
+	public static MongoDbPersistenceDescriptor = new Descriptor("service-msgtemplates", "persistence", "mongodb", "*", "1.0");
+	public static ControllerDescriptor = new Descriptor("service-msgtemplates", "controller", "default", "*", "1.0");
+	public static HttpServiceDescriptor = new Descriptor("service-msgtemplates", "service", "http", "*", "1.0");
+	public static CommandableGrpcServiceDescriptor = new Descriptor("service-msgtemplates", "service", "commandable-grpc", "*", "1.0");
+	public static GrpcServiceDescriptor = new Descriptor("service-msgtemplates", "service", "grpc", "*", "1.0");
 	
 	constructor() {
 		super();

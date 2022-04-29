@@ -5,7 +5,7 @@ import { MessageTemplatesServiceFactory } from '../build/MessageTemplatesService
 export class MessageTemplatesLambdaFunction extends CommandableLambdaFunction {
     public constructor() {
         super("message_templates", "Message templates function");
-        this._dependencyResolver.put('controller', new Descriptor('pip-services-msgtemplates', 'controller', 'default', '*', '*'));
+        this._dependencyResolver.put('controller', new Descriptor('service-msgtemplates', 'controller', 'default', '*', '*'));
         this._factories.add(new MessageTemplatesServiceFactory());
     }
 }

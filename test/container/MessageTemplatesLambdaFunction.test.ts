@@ -31,8 +31,8 @@ suite('MessageTemplatesLambdaFunction', ()=> {
     suiteSetup(async () => {
         let config = ConfigParams.fromTuples(
             'logger.descriptor', 'pip-services:logger:console:default:1.0',
-            'persistence.descriptor', 'pip-services-msgtemplates:persistence:memory:default:1.0',
-            'controller.descriptor', 'pip-services-msgtemplates:controller:default:default:1.0'
+            'persistence.descriptor', 'service-msgtemplates:persistence:memory:default:1.0',
+            'controller.descriptor', 'service-msgtemplates:controller:default:default:1.0'
         );
 
         lambda = new MessageTemplatesLambdaFunction();

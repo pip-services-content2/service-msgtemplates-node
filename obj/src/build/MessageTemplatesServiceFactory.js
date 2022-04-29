@@ -23,12 +23,12 @@ class MessageTemplatesServiceFactory extends pip_services3_components_nodex_1.Fa
     }
 }
 exports.MessageTemplatesServiceFactory = MessageTemplatesServiceFactory;
-MessageTemplatesServiceFactory.Descriptor = new pip_services3_commons_nodex_1.Descriptor("pip-services-msgtemplates", "factory", "default", "default", "1.0");
-MessageTemplatesServiceFactory.MemoryPersistenceDescriptor = new pip_services3_commons_nodex_1.Descriptor("pip-services-msgtemplates", "persistence", "memory", "*", "1.0");
-MessageTemplatesServiceFactory.FilePersistenceDescriptor = new pip_services3_commons_nodex_1.Descriptor("pip-services-msgtemplates", "persistence", "file", "*", "1.0");
-MessageTemplatesServiceFactory.MongoDbPersistenceDescriptor = new pip_services3_commons_nodex_1.Descriptor("pip-services-msgtemplates", "persistence", "mongodb", "*", "1.0");
-MessageTemplatesServiceFactory.ControllerDescriptor = new pip_services3_commons_nodex_1.Descriptor("pip-services-msgtemplates", "controller", "default", "*", "1.0");
-MessageTemplatesServiceFactory.HttpServiceDescriptor = new pip_services3_commons_nodex_1.Descriptor("pip-services-msgtemplates", "service", "http", "*", "1.0");
-MessageTemplatesServiceFactory.CommandableGrpcServiceDescriptor = new pip_services3_commons_nodex_1.Descriptor("pip-services-msgtemplates", "service", "commandable-grpc", "*", "1.0");
-MessageTemplatesServiceFactory.GrpcServiceDescriptor = new pip_services3_commons_nodex_1.Descriptor("pip-services-msgtemplates", "service", "grpc", "*", "1.0");
+MessageTemplatesServiceFactory.Descriptor = new pip_services3_commons_nodex_1.Descriptor("service-msgtemplates", "factory", "default", "default", "1.0");
+MessageTemplatesServiceFactory.MemoryPersistenceDescriptor = new pip_services3_commons_nodex_1.Descriptor("service-msgtemplates", "persistence", "memory", "*", "1.0");
+MessageTemplatesServiceFactory.FilePersistenceDescriptor = new pip_services3_commons_nodex_1.Descriptor("service-msgtemplates", "persistence", "file", "*", "1.0");
+MessageTemplatesServiceFactory.MongoDbPersistenceDescriptor = new pip_services3_commons_nodex_1.Descriptor("service-msgtemplates", "persistence", "mongodb", "*", "1.0");
+MessageTemplatesServiceFactory.ControllerDescriptor = new pip_services3_commons_nodex_1.Descriptor("service-msgtemplates", "controller", "default", "*", "1.0");
+MessageTemplatesServiceFactory.HttpServiceDescriptor = new pip_services3_commons_nodex_1.Descriptor("service-msgtemplates", "service", "http", "*", "1.0");
+MessageTemplatesServiceFactory.CommandableGrpcServiceDescriptor = new pip_services3_commons_nodex_1.Descriptor("service-msgtemplates", "service", "commandable-grpc", "*", "1.0");
+MessageTemplatesServiceFactory.GrpcServiceDescriptor = new pip_services3_commons_nodex_1.Descriptor("service-msgtemplates", "service", "grpc", "*", "1.0");
 //# sourceMappingURL=MessageTemplatesServiceFactory.js.map

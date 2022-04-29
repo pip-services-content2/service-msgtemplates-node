@@ -14,7 +14,7 @@ export class MessageTemplatesGrpcServiceV1 extends GrpcService {
 	
     public constructor() {
         super(services.MessageTemplatesService);
-        this._dependencyResolver.put('controller', new Descriptor("pip-services-msgtemplates", "controller", "default", "*", "*"));
+        this._dependencyResolver.put('controller', new Descriptor("service-msgtemplates", "controller", "default", "*", "*"));
     }
 
 	public setReferences(references: IReferences): void {

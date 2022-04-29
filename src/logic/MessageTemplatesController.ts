@@ -19,7 +19,7 @@ import { MessageTemplatesCommandSet } from './MessageTemplatesCommandSet';
 
 export class MessageTemplatesController implements  IConfigurable, IReferenceable, ICommandable, IMessageTemplatesController {
     private static _defaultConfig: ConfigParams = ConfigParams.fromTuples(
-        'dependencies.persistence', 'pip-services-msgtemplates:persistence:*:*:1.0'
+        'dependencies.persistence', 'service-msgtemplates:persistence:*:*:1.0'
     );
 
     private _dependencyResolver: DependencyResolver = new DependencyResolver(MessageTemplatesController._defaultConfig);
